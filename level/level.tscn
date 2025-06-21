@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://2cq3k7gs72df"]
+
+[ext_resource type="PackedScene" uid="uid://bwf0qhge53ai5" path="res://player/player.tscn" id="2_f665b"]
+[ext_resource type="PackedScene" uid="uid://cbirg4jkgn3pq" path="res://scenery/house.tscn" id="3_i6q14"]
+[ext_resource type="PackedScene" uid="uid://dhsyt607bvhqx" path="res://scenery/stairs_2.tscn" id="4_ah57s"]
+[ext_resource type="PackedScene" uid="uid://duxtxuptq4af6" path="res://scenery/stairs_1.tscn" id="5_wvk3g"]
+
+[node name="LEVEL" type="Node3D"]
+
+[node name="player" parent="." instance=ExtResource("2_f665b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3871, 1.51896, 0.97846)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.98014, -0.190524, -0.0550135, -0.0482771, -0.498314, 0.865651, -0.192341, -0.845803, -0.497616, -0.596821, 10.0976, -4.44994)
+shadow_enabled = true
+
+[node name="house" parent="." instance=ExtResource("3_i6q14")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 20.6301, -0.643867, 0.0752334)
+
+[node name="stairs_2" parent="." instance=ExtResource("4_ah57s")]
+transform = Transform3D(-0.666639, 0, 1.39973e-07, 0, 0.8, 0, -1.0066e-07, 0, -0.927, 27.2467, -3.52173, -9.51732)
+
+[node name="stairs_1" parent="." instance=ExtResource("5_wvk3g")]
+transform = Transform3D(-2.88495e-08, 0, -0.66, 0, 0.66, 0, 0.66, 0, -2.88495e-08, 27.3286, -6.15761, -12.7591)

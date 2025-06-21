@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://nqodqu4rv4bu"]
+
+[ext_resource type="Texture2D" uid="uid://b3ywk8q3h23ny" path="res://textures/darkbrown.png" id="1_hdges"]
+
+[resource]
+albedo_texture = ExtResource("1_hdges")
+uv1_scale = Vector3(-0.15, 0.91, 1.08)
