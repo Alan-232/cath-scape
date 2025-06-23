@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx0tlwuojtf3k"]
+
+[ext_resource type="PackedScene" uid="uid://bwf0qhge53ai5" path="res://player/player.tscn" id="1_i5dyu"]
+[ext_resource type="Script" path="res://player/interaction.gd" id="2_wxw6f"]
+
+[node name="player" instance=ExtResource("1_i5dyu")]
+
+[node name="RayCast3D" type="RayCast3D" parent="head" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.0704752, 0)
+target_position = Vector3(0, -1.5, 0)
+script = ExtResource("2_wxw6f")

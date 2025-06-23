@@ -1,14 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://2cq3k7gs72df"]
+[gd_scene load_steps=7 format=3 uid="uid://2cq3k7gs72df"]
 
-[ext_resource type="PackedScene" uid="uid://bwf0qhge53ai5" path="res://player/player.tscn" id="2_f665b"]
+[ext_resource type="PackedScene" uid="uid://bx0tlwuojtf3k" path="res://scenery/player.tscn" id="1_4m6tt"]
 [ext_resource type="PackedScene" uid="uid://cbirg4jkgn3pq" path="res://scenery/house.tscn" id="3_i6q14"]
 [ext_resource type="PackedScene" uid="uid://dhsyt607bvhqx" path="res://scenery/stairs_2.tscn" id="4_ah57s"]
+[ext_resource type="PackedScene" uid="uid://bmc0v6l0obh3i" path="res://scenery/door.tscn" id="5_qx2b5"]
 [ext_resource type="PackedScene" uid="uid://duxtxuptq4af6" path="res://scenery/stairs_1.tscn" id="5_wvk3g"]
+[ext_resource type="PackedScene" uid="uid://crtar33qvygdm" path="res://scenery/shelf_1.tscn" id="6_ag3w5"]
 
 [node name="LEVEL" type="Node3D"]
 
-[node name="player" parent="." instance=ExtResource("2_f665b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3871, 1.51896, 0.97846)
+[node name="player" parent="." instance=ExtResource("1_4m6tt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1438, 1.3238, 5.92059)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.98014, -0.190524, -0.0550135, -0.0482771, -0.498314, 0.865651, -0.192341, -0.845803, -0.497616, -0.596821, 10.0976, -4.44994)
@@ -22,3 +24,9 @@ transform = Transform3D(-0.666639, 0, 1.39973e-07, 0, 0.8, 0, -1.0066e-07, 0, -0
 
 [node name="stairs_1" parent="." instance=ExtResource("5_wvk3g")]
 transform = Transform3D(-2.88495e-08, 0, -0.66, 0, 0.66, 0, 0.66, 0, -2.88495e-08, 27.3286, -6.15761, -12.7591)
+
+[node name="door" parent="." instance=ExtResource("5_qx2b5")]
+transform = Transform3D(1.39, 0, 0, 0, 1.2, 0, 0, 0, 1.12, 18.3457, 1.888, 3.84777)
+
+[node name="shelf1" parent="." instance=ExtResource("6_ag3w5")]
+transform = Transform3D(-0.0945253, 0, 0.995522, 0, 1, 0, -0.995522, 0, -0.0945253, 19.2589, 2.02559, 15.1882)
