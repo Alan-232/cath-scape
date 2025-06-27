@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://2cq3k7gs72df"]
+[gd_scene load_steps=15 format=3 uid="uid://2cq3k7gs72df"]
 
 [ext_resource type="PackedScene" uid="uid://bx0tlwuojtf3k" path="res://scenery/player.tscn" id="1_4m6tt"]
 [ext_resource type="PackedScene" uid="uid://cbirg4jkgn3pq" path="res://scenery/house.tscn" id="3_i6q14"]
@@ -10,15 +10,34 @@
 [ext_resource type="PackedScene" uid="uid://clhe1annq8sdl" path="res://scenery/doll.tscn" id="7_yam7i"]
 [ext_resource type="PackedScene" uid="uid://b5fquuhxy0ha2" path="res://scenery/sink.tscn" id="9_t63s7"]
 [ext_resource type="PackedScene" uid="uid://uyfldqo8qssg" path="res://scenery/cage.tscn" id="10_bbcx8"]
+[ext_resource type="PackedScene" uid="uid://dpvntn2h0kkcx" path="res://scenery/lamp.tscn" id="11_yncgg"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f2l1i"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_cover_modulate = Color(0.2484, 0.2484, 0.2484, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.392504, 0.401613, 0.415992, 1)
+
+[sub_resource type="Sky" id="Sky_0m4ph"]
+sky_material = SubResource("ProceduralSkyMaterial_f2l1i")
+
+[sub_resource type="Environment" id="Environment_333da"]
+background_mode = 1
+background_color = Color(0.113049, 0.113049, 0.113049, 1)
+sky = SubResource("Sky_0m4ph")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.629228, 0.661326, 0.711761, 1)
+fog_density = 0.003
 
 [node name="LEVEL" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_333da")
+
 [node name="player" parent="." instance=ExtResource("1_4m6tt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1438, 1.3238, 5.92059)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.98014, -0.190524, -0.0550135, -0.0482771, -0.498314, 0.865651, -0.192341, -0.845803, -0.497616, -0.596821, 10.0976, -4.44994)
-shadow_enabled = true
 
 [node name="house" parent="." instance=ExtResource("3_i6q14")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 20.6301, -0.643867, 0.0752334)
@@ -94,3 +113,12 @@ transform = Transform3D(-2.03, 0, -3.06521e-07, 0, 2.03, 0, 3.06521e-07, 0, -2.0
 
 [node name="cage" parent="." instance=ExtResource("10_bbcx8")]
 transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 25.7008, -5.64974, 12.6755)
+
+[node name="lamp" parent="." instance=ExtResource("11_yncgg")]
+transform = Transform3D(2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 16.2448, 0.347593, -2.74234)
+
+[node name="lamp3" parent="." instance=ExtResource("11_yncgg")]
+transform = Transform3D(2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 23.4959, 0.232177, -12.6353)
+
+[node name="lamp2" parent="." instance=ExtResource("11_yncgg")]
+transform = Transform3D(2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 27.8714, 0.347593, 8.74789)

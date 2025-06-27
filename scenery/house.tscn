@@ -266,10 +266,6 @@ data = PackedVector3Array(-1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1,
 
 [node name="house" type="Node3D"]
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.921967, 7.85748, -18.931)
-omni_range = 11.7311
-
 [node name="meshes" type="Node3D" parent="."]
 
 [node name="Cube" type="MeshInstance3D" parent="meshes"]
@@ -347,18 +343,6 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="meshes/Cube_006/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ba2wb")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.92317, 0)
-omni_range = 11.7311
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03371, 5.50171, 15.6499)
-omni_range = 14.41
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28546, -5.05985, 2.9198)
-omni_range = 18.5457
 
 [node name="table" parent="." instance=ExtResource("3_2573x")]
 transform = Transform3D(1.36, 0, 0, 0, 1.36, 0, 0, 0, 1.36, 0, 3.92236, -5.71408)
