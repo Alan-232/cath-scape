@@ -1,6 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bmc0v6l0obh3i"]
+[gd_scene load_steps=11 format=3 uid="uid://bmc0v6l0obh3i"]
 
 [ext_resource type="Script" path="res://scripts/door.gd" id="1_frteq"]
+[ext_resource type="Texture2D" uid="uid://b3ywk8q3h23ny" path="res://textures/darkbrown.png" id="2_vo0me"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d44kp"]
+albedo_texture = ExtResource("2_vo0me")
+uv1_scale = Vector3(0.07, 5.57, 0.63)
 
 [sub_resource type="BoxMesh" id="BoxMesh_aecoq"]
 
@@ -68,6 +73,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.657931, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="hinge"]
 transform = Transform3D(1.35385, 0, 0, 0, 2.37551, 0, 0, 0, 0.0773237, 0.657931, -0.0986745, 0)
+material_override = SubResource("StandardMaterial3D_d44kp")
 mesh = SubResource("BoxMesh_aecoq")
 skeleton = NodePath("../..")
 

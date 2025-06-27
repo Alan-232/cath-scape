@@ -1,10 +1,11 @@
-[gd_scene load_steps=34 format=4 uid="uid://cbirg4jkgn3pq"]
+[gd_scene load_steps=35 format=4 uid="uid://cbirg4jkgn3pq"]
 
 [ext_resource type="Material" uid="uid://nqodqu4rv4bu" path="res://materials/brick.tres" id="1_mqhx1"]
 [ext_resource type="Material" uid="uid://bg55cxyiv5c8j" path="res://materials/stone.tres" id="2_3smv0"]
 [ext_resource type="PackedScene" uid="uid://c27rbvp15y2h7" path="res://scenery/table.tscn" id="3_2573x"]
 [ext_resource type="PackedScene" uid="uid://cl44ole4hutv4" path="res://scenery/shelf_things.tscn" id="4_bp17y"]
 [ext_resource type="PackedScene" uid="uid://cwyd5vknrwh1x" path="res://scenery/tv.tscn" id="5_2n83l"]
+[ext_resource type="PackedScene" uid="uid://dxhdby2flquxe" path="res://glb_models/chair.glb" id="6_fho35"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4l57"]
 resource_name = "Material"
@@ -373,3 +374,15 @@ transform = Transform3D(0.0578254, 0, -0.998327, 0, 1, 0, 0.998327, 0, 0.0578254
 
 [node name="old_tv_in_a_stand_wit_0620034805_texture" parent="." instance=ExtResource("5_2n83l")]
 transform = Transform3D(2.223, 0, 0, 0, 2.197, 0, 0, 0, 1.882, -5.15543, 4.11265, -5.56714)
+
+[node name="chair1" parent="." instance=ExtResource("6_fho35")]
+transform = Transform3D(0.243525, 0, -0.116599, 0, 0.27, 0, 0.116599, 0, 0.243525, -0.174644, 3.98062, -3.18091)
+
+[node name="chair2" parent="." instance=ExtResource("6_fho35")]
+transform = Transform3D(0.243525, 0, -0.116599, 0, 0.27, 0, 0.116599, 0, 0.243525, 1.64032, 3.76941, 11.9436)
+
+[node name="chair3" parent="." instance=ExtResource("6_fho35")]
+transform = Transform3D(-0.184068, 0.00391656, -0.197493, 0.00177245, 0.269969, 0.00370188, 0.197524, 0.00122723, -0.184073, 6.39636, 4.02228, 10.3987)
+
+[node name="chair4" parent="." instance=ExtResource("6_fho35")]
+transform = Transform3D(-0.184068, 0.00391656, -0.197493, 0.00177245, 0.269969, 0.00370188, 0.197524, 0.00122723, -0.184073, 6.83173, -8.01041, 10.3873)

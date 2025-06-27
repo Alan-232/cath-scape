@@ -30,7 +30,7 @@ transform = Transform3D(-0.666639, 0, 1.39973e-07, 0, 0.8, 0, -1.0066e-07, 0, -0
 transform = Transform3D(-2.88495e-08, 0, -0.66, 0, 0.66, 0, 0.66, 0, -2.88495e-08, 27.3286, -6.15761, -12.7591)
 
 [node name="door" parent="." instance=ExtResource("5_qx2b5")]
-transform = Transform3D(1.39, 0, 0, 0, 1.2, 0, 0, 0, 1.12, 18.3457, 1.888, 1.32769)
+transform = Transform3D(-6.42994e-08, 0, -1.185, 0, 1.27, 0, 1.471, 0, -5.1798e-08, 11.9801, 1.83075, 0.985448)
 
 [node name="bed2" parent="." instance=ExtResource("6_dxs06")]
 transform = Transform3D(-0.10795, 0.00174376, 0.00279062, 0.00193589, 0.107717, 0.00757821, -0.00266094, 0.00762481, -0.107698, 26.6011, 0.379453, 10.164)
@@ -54,6 +54,36 @@ transform = Transform3D(0.0281375, -0.29858, -0.00765222, 0.00913828, -0.0068218
 transform = Transform3D(0.0281376, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845518, 0.0850792, -0.566178, 0.477598)
 
 [node name="a_voodoo_doll_which_i_0620040235_texture4" parent="shelf1" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0357029, -0.175702, 0.240529, 0.00537748, 0.242592, 0.17641, -0.29782, -0.016683, 0.0320201, -0.243303, -0.391227, -0.147287)
+
+[node name="shelf2" parent="." instance=ExtResource("6_ag3w5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8499, 2.02559, -9.10581)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture" parent="shelf2" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0281375, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845517, 0.0928459, 0.511156, 1.6007)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture2" parent="shelf2" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0281375, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845517, 0.0831261, 0.511156, 1.06944)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture3" parent="shelf2" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0281376, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845518, 0.0850792, -0.566178, 0.477598)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture4" parent="shelf2" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0357029, -0.175702, 0.240529, 0.00537748, 0.242592, 0.17641, -0.29782, -0.016683, 0.0320201, -0.243303, -0.391227, -0.147287)
+
+[node name="shelf3" parent="." instance=ExtResource("6_ag3w5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8499, -3.95728, -9.10581)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture" parent="shelf3" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0281375, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845517, 0.0928459, 0.511156, 1.6007)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture2" parent="shelf3" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0281375, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845517, 0.0831261, 0.511156, 1.06944)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture3" parent="shelf3" instance=ExtResource("7_yam7i")]
+transform = Transform3D(0.0281376, -0.29858, -0.00765222, 0.00913828, -0.00682189, 0.299783, -0.298538, -0.0283503, 0.00845518, 0.0850792, -0.566178, 0.477598)
+
+[node name="a_voodoo_doll_which_i_0620040235_texture4" parent="shelf3" instance=ExtResource("7_yam7i")]
 transform = Transform3D(0.0357029, -0.175702, 0.240529, 0.00537748, 0.242592, 0.17641, -0.29782, -0.016683, 0.0320201, -0.243303, -0.391227, -0.147287)
 
 [node name="sink1" parent="." instance=ExtResource("9_t63s7")]

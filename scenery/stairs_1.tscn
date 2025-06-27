@@ -1,4 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://duxtxuptq4af6"]
+[gd_scene load_steps=7 format=4 uid="uid://duxtxuptq4af6"]
+
+[ext_resource type="Texture2D" uid="uid://crbvp8noeo6iu" path="res://textures/stone23.jpg" id="1_vtfot"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3uu4t"]
+albedo_texture = ExtResource("1_vtfot")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1myx"]
 resource_name = "Material"
@@ -45,6 +50,7 @@ points = PackedVector3Array(-0.994697, -0.1133, -0.976012, 0.0634921, -0.793645,
 
 [node name="Cube" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.42481, 0, 0, 0, 4.16086, 0, 0, 0, 4.02678, 0, 5.16666, 0)
+material_override = SubResource("StandardMaterial3D_3uu4t")
 mesh = SubResource("ArrayMesh_qb0qx")
 skeleton = NodePath("")
 
