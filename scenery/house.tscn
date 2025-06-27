@@ -1,11 +1,13 @@
-[gd_scene load_steps=35 format=4 uid="uid://cbirg4jkgn3pq"]
+[gd_scene load_steps=38 format=4 uid="uid://cbirg4jkgn3pq"]
 
 [ext_resource type="Material" uid="uid://nqodqu4rv4bu" path="res://materials/brick.tres" id="1_mqhx1"]
 [ext_resource type="Material" uid="uid://bg55cxyiv5c8j" path="res://materials/stone.tres" id="2_3smv0"]
+[ext_resource type="Texture2D" uid="uid://b8fnf1d4jpipt" path="res://glb_models/stone23.jpg" id="3_1qaye"]
 [ext_resource type="PackedScene" uid="uid://c27rbvp15y2h7" path="res://scenery/table.tscn" id="3_2573x"]
 [ext_resource type="PackedScene" uid="uid://cl44ole4hutv4" path="res://scenery/shelf_things.tscn" id="4_bp17y"]
 [ext_resource type="PackedScene" uid="uid://cwyd5vknrwh1x" path="res://scenery/tv.tscn" id="5_2n83l"]
 [ext_resource type="PackedScene" uid="uid://dxhdby2flquxe" path="res://glb_models/chair.glb" id="6_fho35"]
+[ext_resource type="PackedScene" uid="uid://bndldu62n3cnw" path="res://scenery/book1.tscn" id="8_qjgf1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4l57"]
 resource_name = "Material"
@@ -229,6 +231,10 @@ shadow_mesh = SubResource("ArrayMesh_4c2am")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kn0af"]
 data = PackedVector3Array(0.945, -0.8731, 0.9525, -0.945, 1, 0.9525, -0.945, -0.8731, 0.9525, 0.945, -0.8731, 0.9525, 0.945, 1, 0.9525, -0.945, 1, 0.9525, -0.945, -0.8731, 0.9525, -0.945, 1, -0.9525, -0.945, -0.8731, -0.9525, -0.945, -0.8731, 0.9525, -0.945, 1, 0.9525, -0.945, 1, -0.9525, -0.945, -0.8731, -0.9525, 0.945, -0.8731, 0.9525, -0.945, -0.8731, 0.9525, -0.945, -0.8731, -0.9525, 0.945, -0.8731, -0.9525, 0.945, -0.8731, 0.9525, 0.945, -0.8731, -0.9525, 0.945, 1, 0.9525, 0.945, -0.8731, 0.9525, 0.945, -0.8731, -0.9525, 0.945, 1, -0.9525, 0.945, 1, 0.9525, -0.945, -0.8731, -0.9525, 0.945, 1, -0.9525, 0.945, -0.8731, -0.9525, -0.945, -0.8731, -0.9525, -0.945, 1, -0.9525, 0.945, 1, -0.9525, 0.945, 1, -0.9525, -1, 1, -1, 1, 1, -1, -1, 1, -1, -0.945, 1, 0.9525, -1, 1, 1, -0.945, 1, -0.9525, -1, 1, -1, 0.945, 1, -0.9525, -1, 1, -1, -0.945, 1, -0.9525, -0.945, 1, 0.9525, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1, -1, 0.945, 1, 0.9525, 0.945, 1, -0.9525, 0.945, 1, 0.9525, -1, 1, 1, -0.945, 1, 0.9525, 1, 1, 1, 0.945, 1, 0.9525, 1, 1, -1, 0.945, 1, 0.9525, 1, 1, 1, -1, 1, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hb33v"]
+albedo_texture = ExtResource("3_1qaye")
+uv1_scale = Vector3(2.34, 1.41, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tg0j"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x4n54"]
@@ -336,6 +342,7 @@ shape = SubResource("ConcavePolygonShape3D_kn0af")
 
 [node name="Cube_006" type="MeshInstance3D" parent="meshes"]
 transform = Transform3D(17.7736, 0, 0, 0, 1, 0, 0, 0, 33.0184, 0.290327, 14.1137, -0.28564)
+material_override = SubResource("StandardMaterial3D_hb33v")
 mesh = SubResource("ArrayMesh_3ynft")
 skeleton = NodePath("")
 
@@ -370,3 +377,9 @@ transform = Transform3D(-0.184068, 0.00391656, -0.197493, 0.00177245, 0.269969, 
 
 [node name="chair4" parent="." instance=ExtResource("6_fho35")]
 transform = Transform3D(-0.184068, 0.00391656, -0.197493, 0.00177245, 0.269969, 0.00370188, 0.197524, 0.00122723, -0.184073, 6.83173, -8.01041, 10.3873)
+
+[node name="book1" parent="." instance=ExtResource("8_qjgf1")]
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 3.35843, 4.32479, 9.58977)
+
+[node name="book2" parent="." instance=ExtResource("8_qjgf1")]
+transform = Transform3D(0.486888, 0, -0.276658, 0, 0.56, 0, 0.276658, 0, 0.486888, 2.38149, 4.32479, 9.37488)
