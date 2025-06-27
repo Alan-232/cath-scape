@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmtf3to4jpj54"]
+
+[ext_resource type="Texture2D" uid="uid://crbvp8noeo6iu" path="res://textures/stone23.jpg" id="1_he41u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bmvgx"]
+size = Vector3(2.15, 0.02, 2.33)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u2nee"]
+albedo_texture = ExtResource("1_he41u")
+uv1_scale = Vector3(1.19, 0.56, 1.17)
+
+[sub_resource type="BoxMesh" id="BoxMesh_m6xfh"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_bmvgx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(2.19957, 0, 0, 0, -0.00354709, 0, 0, 0, 2.63514, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_u2nee")
+mesh = SubResource("BoxMesh_m6xfh")
+skeleton = NodePath("../..")

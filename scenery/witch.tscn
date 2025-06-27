@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://fm8okpbn776v"]
+
+[ext_resource type="PackedScene" uid="uid://ci1vuy6ud5p33" path="res://glb_models/witch.glb" id="1_0oc66"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_0oc66")]
